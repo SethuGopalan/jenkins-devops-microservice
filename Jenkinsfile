@@ -10,12 +10,14 @@
 
 pipeline{
 
-	agent any
+	// agent any
+	agent{docker{image 'python:3.8'}}
 	stages{
 
 	    stage('Build'){
 
 		   steps{
+			  sh 'python --version'
 			  echo "Build"
 			
 		    }
@@ -51,7 +53,7 @@ pipeline{
 			echo "I run when you are fail"
 			
 		}
-} 
+ } 
 }
 
 
