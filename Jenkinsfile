@@ -1,10 +1,44 @@
-node {
-	echo 'Build' 
+// node {
+// 	echo 'Build' 
 	
-	echo "Test"
+// 	echo "Test"
 
-	echo 'Integration Test'
+// 	echo 'Integration Test'
 	
+// 	}
+// DECLARATIVE PIPELINE
+
+PIPELINE{
+
+	agent any
+	stage('Build'){
+
+		steps{
+			echo "Build"
+			
+		}
 	}
+	stage('Test'){
+
+		steps{
+			
+			echo  "Test"
+			
+		}
+	}
+	stage('Integration Test'){
+
+		steps{
+			
+			echo  "Integration Test"
+		}
+	}
+}
+
+
+
+
+
+
 
 
