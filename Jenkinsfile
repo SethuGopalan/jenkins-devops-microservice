@@ -11,6 +11,8 @@
 PIPELINE{
 
 	agent any
+	stages{
+
 	stage('Build'){
 
 		steps{
@@ -32,6 +34,7 @@ PIPELINE{
 			
 			echo  "Integration Test"
 		}
+	}
 	}
 }
 
