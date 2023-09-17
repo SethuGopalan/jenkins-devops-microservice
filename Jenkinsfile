@@ -8,33 +8,33 @@
 // 	}
 // DECLARATIVE PIPELINE
 
-PIPELINE{
+pipeline{
 
 	agent any
 	stages{
 
-	stage('Build'){
+	    stage('Build'){
 
-		steps{
-			echo "Build"
+		   steps{
+			  echo "Build"
 			
-		}
-	}
-	stage('Test'){
+		    }
+	    }
+	    stage('Test'){
 
-		steps{
+		   steps{
 			
-			echo  "Test"
+			  echo  "Test"
 			
-		}
-	}
-	stage('Integration Test'){
+		  }
+	   }
+	     stage('Integration Test'){
 
-		steps{
+		     steps{
 			
-			echo  "Integration Test"
-		}
-	}
+			    echo  "Integration Test"
+		    }
+	    }
 	}
 }
 
